@@ -217,3 +217,35 @@ sudo /usr/bin/supervisorctl update
 
 sudo systemctl reload nginx
 ```
+
+<br><br>
+
+## [ NOTE: ] Development
+## To switch from production to development mode...
+```bash
+  # To temporarily halt the ERP system on production, execute the command to stop the relevant services. 
+  sudo service supervisor stop
+  sudo service redis stop
+  sudo service nginx stop
+
+  
+  # To initiate development mode, ensure you have a Procfile in the frappe-bench directory. Execute the command 'bench setup procfile' to set it up.
+  bench setup procfile
+
+  # To start develop server
+  bench start
+
+  ```
+
+  ## To resume production mode again.
+  ```bash
+    # Start services:
+    sudo service supervisor start
+    sudo service redis start
+    sudo service nginx start
+
+    # Check service status:
+    sudo service supervisor status
+    sudo service redis status
+    sudo service nginx status
+  ```
