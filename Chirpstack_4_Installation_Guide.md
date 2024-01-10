@@ -77,7 +77,7 @@ sudo apt install chirpstack-gateway-bridge
 
 
 ### Configuration
-***
+
 Configure the ChirpStack Gateway Bridge by updating the MQTT integration section in the configuration file located at /etc/chirpstack-gateway-bridge/chirpstack-gateway-bridge.toml.
 
 open the chirpstack-gateway-bridge file in nano editor for editing configuration.
