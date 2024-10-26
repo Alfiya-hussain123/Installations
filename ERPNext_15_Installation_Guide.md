@@ -161,7 +161,7 @@ sudo apt-get install xvfb libfontconfig wkhtmltopdf
 Setting up and starting Frappe Bench in development mode with version 5.19.0, Frappe framework version 15, and Python 3.11
 
 ```bash
-sudo -H pip3 install frappe-bench=5.19.0
+sudo -H pip3 install frappe-bench==5.19.0
 
 bench --version
 
